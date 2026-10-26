@@ -1,0 +1,45 @@
+{
+  "dependencies": {
+    "@elizaos/core": "^1.7.2",
+    "viem": "^2.21.0"
+  },
+  "description": "ElizaOS plugin routing agent tool calls into the Spread Paywall API (181 pay-per-call x402 endpoints, settled in USDC on Base)",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "elizaos",
+    "eliza",
+    "plugin",
+    "x402",
+    "solana",
+    "paywall"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "name": "eliza-plugin-spread",
+  "peerDependencies": {
+    "@elizaos/core": "^1.7.2"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "version": "1.0.1"
+}
